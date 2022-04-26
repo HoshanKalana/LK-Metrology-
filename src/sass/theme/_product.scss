@@ -1,0 +1,776 @@
+.page-content {
+    min-height: 800px;
+
+    &.product-page {
+        .hero-banner-section {
+            .hero-banner {
+                min-height: 80vh;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+
+                .content-wrap {
+                    font-family: $font-1;
+                    color: $color-4;
+                    width: 50%;
+
+                    @include media-breakpoint-down(md) {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    h2 {
+                        font-size: 48px;
+                        font-weight: 700;
+                        padding-bottom: 20px;
+
+                        @include media-breakpoint-down(md) {
+                            font-size: 35px;
+                        }
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 700;
+
+                        @include media-breakpoint-down(md) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-fammiles {
+            .product-fammily-desktop {
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+                .tab-menu {
+                    background-color: $color-1;
+                    padding: 20px 0;
+
+                    .nav {
+                        justify-content: space-between;
+                        border-bottom: unset;
+
+                        .nav-item {
+                            .nav-link {
+                                background-color: $color-1;
+                                border: unset;
+                                margin-bottom: 0px;
+
+                                &:active {
+                                    border: unset;
+                                }
+
+                                .product-icon {
+                                    img {
+                                        margin: 0 auto;
+                                        width: 130px;
+                                        height: 200px;
+                                        object-fit: contain;
+                                        @include media-breakpoint-down(xl) { 
+                                            width: 90px;
+                                            height: 160px;
+                                        }
+
+                                        @include media-breakpoint-down(lg) { 
+                                            width: 70px;
+                                            height: 100px;
+                                         }
+                                    }
+                                }
+
+                                .product-family-name {
+                                    font-family: $font-1;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    color: $color-4;
+                                    text-transform: uppercase;
+                                    margin-bottom: 0px;
+                                    text-align: center;
+                                    @include media-breakpoint-down(lg) { 
+                                        font-size: 15px;
+                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tab-body {
+                    .product-section {
+                        .product-details {
+                            background-color: $color-5;
+                            padding: 50px 0;
+
+                            .details-wrap {
+                                text-align: center;
+
+                                h4 {
+                                    font-family: $font-1;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    color: $color-1;
+                                    text-transform: uppercase;
+                                    padding-bottom: 20px;
+                                }
+
+                                p {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: $color-3;
+                                }
+                            }
+                        }
+                        .product-desktop {
+                            padding: 50px 0;
+
+                            .nav {
+                                width: 100%;
+
+                                .nav-link {
+                                    background-color: $color-5;
+                                    border-bottom: 1px solid $color-4;
+                                    color: $color-1;
+                                    font-family: $font-1;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    text-transform: uppercase;
+                                    text-align: left;
+
+                                    &:hover,
+                                    :focus {
+                                        background-color: $color-1;
+                                        color: $color-5;
+                                    }
+
+                                    &.active {
+                                        background-color: $color-1;
+                                        color: $color-5;
+                                    }
+
+                                }
+                            }
+
+                            .tab-content {
+                                .service-content-body {
+                                    padding-left: 30px;
+
+                                    h4 {
+                                        font-family: $font-1;
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        color: $color-1;
+                                        text-transform: uppercase;
+                                        padding-bottom: 40px;
+                                    }
+
+                                    .service-img {
+                                        width: 100%;
+                                        height: 400px;
+                                        object-fit: cover;
+                                        padding-bottom: 30px;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        color: $color-3;
+                                    }
+
+                                    .button-row {
+                                        display: flex;
+                                        align-items: center;
+                                        padding-top: 40px;
+
+                                        .button-wrapper:nth-child(2) {
+                                            padding: 0 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .accessories-section {
+                            padding-bottom: 30px;
+
+                            h4 {
+                                font-family: $font-1;
+                                font-size: 24px;
+                                font-weight: 700;
+                                color: $color-1;
+                                text-transform: uppercase;
+                                padding-bottom: 0px;
+                            }
+
+                            .accessories-slider {
+                                .item-wrap {
+                                    text-align: center;
+
+                                    .accessory-img {
+                                        img {
+                                            margin: 0 auto;
+                                            width: 130px;
+                                            height: 200px;
+                                            object-fit: contain;
+                                        }
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        color: $color-1;
+                                    }
+
+                                }
+
+                                .owl-nav {
+                                    position: absolute;
+                                    top: 40%;
+                                    left: 0;
+                                    right: 0;
+
+                                    .owl-prev {
+                                        position: absolute;
+                                        left: 0;
+                                        background-color: transparent;
+
+                                        .prev {
+                                            background-image: url("../assets/images/prev-blue.svg");
+                                            height: 30px;
+                                            width: 20px;
+                                            background-position: center center;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                        }
+                                    }
+
+                                    .owl-next {
+                                        position: absolute;
+                                        right: 0;
+                                        background-color: transparent;
+
+                                        .next {
+                                            background-image: url("../assets/images/next-blue.svg");
+                                            height: 30px;
+                                            width: 20px;
+                                            background-position: center center;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .product-fammily-mobile {
+                display: none;
+                @include media-breakpoint-down(md) {
+                    display: block;
+                }
+                padding: 20px 0;
+                .product-fammily {
+                    padding-bottom: 5px;
+                    .btn {
+                        &.product-btn {
+                            background-color: $color-1;
+                            display: flex;
+                            align-items: center;
+                            margin: 0 auto;
+                            width: 100%;
+                            justify-content: center;
+                            .product-icon {
+                                img {
+                                    margin: 0 auto;
+                                    width: 60px;
+                                    height: 60px;
+                                    object-fit: contain;
+                                }
+                            }
+                            .product-family-name {
+                                font-family: $font-1;
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: $color-4;
+                                text-transform: uppercase;
+                                margin-bottom: 0px;
+                                text-align: center;
+                                padding-left: 10px;
+                            }
+                            &:focus {
+                                box-shadow: unset;
+                            }
+                        }
+                    }
+
+                    .collapse {
+                        &:not(.show) {
+                            display: none;
+                        }
+                        .card-body {
+                            .product-details {
+                                background-color: $color-5;
+                                padding: 50px 0;
+                                .details-wrap {
+                                    text-align: center;
+                                    h4 {
+                                        font-family: $font-1;
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        color: $color-1;
+                                        text-transform: uppercase;
+                                        padding-bottom: 20px;
+                                    }
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        color: $color-3;
+                                    }
+                                }
+                            }
+                            .product-mobile {
+                                .accordion {
+                                    .accordion-button {
+                                        background-color: $color-4;
+                                        color: $color-1;
+                                        font-family: $font-1;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                        text-align: left;
+                                        &:focus {
+                                            box-shadow: unset;
+                                        }
+                                    }
+                                    .service-content-body {
+                                        .service-img {
+                                            padding-bottom: 15px;
+                                        }
+                                        p {
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            color: $color-3;
+                                        }
+                                        .button-row {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            padding: 30px 0;
+                                            .button-wrapper:nth-child(2) {
+                                                padding: 0 5px;
+                                            }
+                                            .getInTouch-btn,
+                                            .pdf-btn,
+                                            .moreinfo-btn {
+                                                a {
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .accessories-section {
+                                padding: 30px;
+                                h4 {
+                                    font-family: $font-1;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    color: $color-1;
+                                    text-transform: uppercase;
+                                    padding-bottom: 0px;
+                                }
+                                .accessories-slider {
+                                    .item-wrap {
+                                        text-align: center;
+                                        .accessory-img {
+                                            img {
+                                                margin: 0 auto;
+                                                width: 130px;
+                                                height: 200px;
+                                                object-fit: contain;
+                                            }
+                                        }
+                                        p {
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            color: $color-1;
+                                        }
+                                    }
+                                    .owl-nav {
+                                        position: absolute;
+                                        top: 40%;
+                                        left: 0;
+                                        right: 0;
+                                        .owl-prev {
+                                            position: absolute;
+                                            left: 0;
+                                            background-color: transparent;
+                                            .prev {
+                                                background-image: url("../assets/images/prev-blue.svg");
+                                                height: 30px;
+                                                width: 20px;
+                                                background-position: center center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+                                        .owl-next {
+                                            position: absolute;
+                                            right: 0;
+                                            background-color: transparent;
+                                            .next {
+                                                background-image: url("../assets/images/next-blue.svg");
+                                                height: 30px;
+                                                width: 20px;
+                                                background-position: center center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+                                    }
+
+                                    .owl-dots{
+                                        .owl-dot{
+                                            span{
+                                                background: $color-1;
+                                            }
+    
+                                            &.active{
+                                                span{
+                                                    background: $color-2;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .collapsing {
+                        .card-body {
+                            .product-details {
+                                background-color: $color-5;
+                                padding: 50px 0;
+
+                                .details-wrap {
+                                    text-align: center;
+
+                                    h4 {
+                                        font-family: $font-1;
+                                        font-size: 24px;
+                                        font-weight: 700;
+                                        color: $color-1;
+                                        text-transform: uppercase;
+                                        padding-bottom: 20px;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        color: $color-3;
+                                    }
+                                }
+                            }
+
+                            .product-mobile {
+                                .accordion {
+                                    .accordion-button {
+                                        background-color: $color-4;
+                                        color: $color-1;
+                                        font-family: $font-1;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-transform: uppercase;
+                                        text-align: left;
+
+                                        &:focus {
+                                            box-shadow: unset;
+                                        }
+                                    }
+
+                                    .service-content-body {
+
+                                        .service-img {
+                                            padding-bottom: 15px;
+                                        }
+
+                                        p {
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            color: $color-3;
+                                        }
+
+                                        .button-row {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            padding: 30px 0;
+
+                                            .button-wrapper:nth-child(2) {
+                                                padding: 0 5px;
+                                            }
+
+                                            .getInTouch-btn,
+                                            .pdf-btn,
+                                            .moreinfo-btn {
+                                                a {
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .accessories-section {
+                                padding: 30px;
+
+                                h4 {
+                                    font-family: $font-1;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    color: $color-1;
+                                    text-transform: uppercase;
+                                    padding-bottom: 0px;
+                                }
+
+                                .accessories-slider {
+                                    .item-wrap {
+                                        text-align: center;
+
+                                        .accessory-img {
+                                            img {
+                                                margin: 0 auto;
+                                                width: 130px;
+                                                height: 200px;
+                                                object-fit: contain;
+                                            }
+                                        }
+
+                                        p {
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            color: $color-1;
+                                        }
+
+                                    }
+
+                                    .owl-nav {
+                                        position: absolute;
+                                        top: 40%;
+                                        left: 0;
+                                        right: 0;
+
+                                        .owl-prev {
+                                            position: absolute;
+                                            left: 0;
+                                            background-color: transparent;
+
+                                            .prev {
+                                                background-image: url("../assets/images/prev-blue.svg");
+                                                height: 30px;
+                                                width: 20px;
+                                                background-position: center center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+
+                                        .owl-next {
+                                            position: absolute;
+                                            right: 0;
+                                            background-color: transparent;
+
+                                            .next {
+                                                background-image: url("../assets/images/next-blue.svg");
+                                                height: 30px;
+                                                width: 20px;
+                                                background-position: center center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                            }
+                                        }
+                                    }
+
+                                    .owl-dots{
+                                        .owl-dot{
+                                            span{
+                                                background: $color-1;
+                                            }
+    
+                                            &.active{
+                                                span{
+                                                    background: $color-2;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .contact-section {
+            background-color: $color-5;
+
+            .contact-wrapper {
+                width: 85%;
+                margin: 0 auto;
+                padding: 80px 0;
+
+                @media (min-width: 1920px) {
+                    width: 1320px;
+                }
+
+                @media (max-width: 1199.98px) {
+                    width: 90%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    padding: 40px 0 0;
+                    width: 95%;
+                }
+
+                .contact-area {
+
+                    .title {
+                        color: $color-1;
+                    }
+
+                    .contact-content {
+                        padding-top: 40px;
+
+                        @include media-breakpoint-down(lg) {
+                            padding-top: 20px;
+
+                            img {
+                                margin: 0 auto;
+                                display: block;
+                            }
+                        }
+
+                        .details {
+                            p {
+                                color: $color-1;
+                                font-size: 15px;
+                                font-weight: 400;
+
+                                @include media-breakpoint-down(md) {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+
+                    .contact-form {
+                        @include media-breakpoint-down(lg) {
+                            padding-top: 40px;
+                        }
+
+                        @include media-breakpoint-down(md) {
+                            padding: 40px 0;
+                        }
+
+                        .container-fluid {
+                            padding-right: 0px;
+
+                            @include media-breakpoint-down(md) {
+                                padding-right: var(--bs-gutter-x, .75rem);
+                            }
+                        }
+
+                        .form-label {
+                            font-family: $font-2;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $color-3;
+
+                            @include media-breakpoint-down(md) {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .form-control {
+                            background-color: $color-4;
+                            border: 1px solid rgba(206, 212, 218, 0.4);
+                            border-radius: 0px;
+                            color: $color-3;
+
+                            &:focus {
+                                box-shadow: unset;
+                            }
+                        }
+
+                        .wpcf7-file {
+                            font-family: $font-2;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: $color-1;
+
+                            span {
+                                padding-left: 5px;
+                            }
+                        }
+
+                        ::-webkit-file-upload-button {
+                            font-family: $font-2;
+                            color: $color-1;
+                            background-color: transparent;
+                            border: 1px solid $color-1;
+                            padding: 10px 20px;
+                            cursor: pointer;
+                        }
+
+                        .wpcf7-submit {
+                            padding: 10px 35px;
+
+                            &:focus {
+                                border-radius: 0px;
+                            }
+                        }
+
+                        .wpcf7-spinner {
+                            display: none;
+                        }
+
+                        .button-wrapper {
+                            text-align: end;
+
+                            .getInTouch-btn {
+                                font-family: $font-2;
+                                color: #fff;
+                                font-size: 15px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                background-color: $color-1;
+                            }
+                        }
+
+                        .wpcf7-response-output {
+                            color: $color-4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

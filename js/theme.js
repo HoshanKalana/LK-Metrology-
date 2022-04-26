@@ -44,14 +44,14 @@ jQuery(function ($) {
         })
 
 
-        //File Choosen
-        const actualBtn = document.getElementById('actual-btn');
+        // //File Choosen
+        // const actualBtn = document.getElementById('actual-btn');
 
-        const fileChosen = document.getElementById('file-chosen');
+        // const fileChosen = document.getElementById('file-chosen');
 
-        actualBtn.addEventListener('change', function () {
-            fileChosen.textContent = this.files[0].name
-        })
+        // actualBtn.addEventListener('change', function () {
+        //     fileChosen.textContent = this.files[0].name
+        // })
 
         //Hero Slider
         $('.hero-slider').owlCarousel({
@@ -135,6 +135,33 @@ jQuery(function ($) {
             var slideno = $(this).data('slide');
             $('.slider-nav').slick('slickGoTo', slideno - 1);
         });
+
+        //Accessories Slider
+        $('.accessories-slider').owlCarousel({
+            loop:true,
+            margin:10,
+            navText: [
+				"<div class='prev'></div>",
+				"<div class='next'></div>",
+			],
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false,
+                    dots:true
+                },
+                600:{
+                    items:3,
+                    nav:false,
+                    dots:true
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    dots:false
+                }
+            }
+        })
 
 
     });

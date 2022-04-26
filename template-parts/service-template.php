@@ -12,14 +12,14 @@ defined( 'ABSPATH' ) || exit;
 <div class="page-content services-page">
     <section class="hero-banner-section">
         <div class="hero-banner"
-            style="background-image: url('http://dev.lk-metrology.com/wp-content/uploads/2022/01/hero-img-2.png');">
+            style="background-image: url('<?php the_field('hero_image_s'); ?>');">
             <div class="container">
                 <div class="content-wrap">
-                    <h2>Expert services for total peace of mind.</h2>
-                    <p>Global technical support and metrology consulting service</p>
+                    <h2><?php the_field('hero_caption_s'); ?></h2>
+                    <p><?php the_field('hero_sub_caption_s'); ?></p>
                     <div class="button-wrapper">
                         <div class="btn getInTouch-btn hvr-grow">
-                            <a href="<?php the_sub_field('button_hero'); ?>">Get in touch</a>
+                            <a href="<?php the_field('hero_button'); ?>">Get in touch</a>
                         </div>
                     </div>
                 </div>
