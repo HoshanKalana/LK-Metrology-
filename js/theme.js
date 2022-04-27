@@ -140,6 +140,10 @@ jQuery(function ($) {
         $('.accessories-slider').owlCarousel({
             loop:true,
             margin:10,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            autoplaySpeed: 1000,
+            smartSpeed: 450,
             navText: [
 				"<div class='prev'></div>",
 				"<div class='next'></div>",
